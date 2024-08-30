@@ -6,7 +6,7 @@ async function scrape(browser_config, scrape_config) {
     Object.assign(browser_config, scrape_config);
 
     var scraper = new se_scraper.ScrapeManager(browser_config);
-
+    
     await scraper.start();
 
     var results = await scraper.scrape(scrape_config);
